@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+h3{
+  padding-bottom: 12px;
+}
+
+/* =============== HERO SECTION =============== */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1b1b1b, #000);
+  padding: 20px;
+}
+
+.profile {
+  width: 190px;
+  border-radius: 50%;
+  border: 3px solid #ffdf4a;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px #ffdf4a;
+}
+
+.title span {
+  color: #ffdf4a;
+}
+
+.typing {
+  margin-top: 10px;
+  height: 30px;
+  font-size: 1.2rem;
+  color: #ffdf4a;
+}
+
+.sub {
+  margin: 20px auto;
+  max-width: 500px;
+  color: #bfbfbf;
+}
+.hero .btn{
+  position: relative;
+  top: 35px ;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #ffdf4a;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.btn:hover {
+  background: #fff;
+}
+
+/* =============== SKILLS SECTION =============== */
+.skills {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  /* margin-bottom: 40px; */
+  color: #ffdf4a;
+  padding-bottom: 35px;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  width: 280px;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+/* =============== PROJECT SECTION =============== */
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  gap: 35px;
+}
+
+.project-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.project-card .btn {
+  padding: 10px 16px;     /* أصغر من قبل */
+  font-size: 0.9rem;     /* تصغير الخط */
+  border-radius: 18px;  /* دايرة أنعم */
+  margin: 5px 40px ;
+
+}
+
+
+.project-card h3 {
+  line-height: 1;
+}
+
+.project-card p {
+  line-height: 1;
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px #ffdf4a66;
+}
+
+/* =============== CONTACT =============== */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #111;
+}
+
+.socials a {
+  margin: 0 15px;
+  color: #ffdf4a;
+  text-decoration: none;
+  transition: 0.3s;
+
+  
+}
+
+.socials a:hover {
+  color: rgb(17, 247, 9);
+}
+
+/* ===========================
+     MOBILE RESPONSIVE
+   =========================== */
+
+@media (max-width: 768px) {
+
+  /* ===== HERO SECTION ===== */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .typing {
+    font-size: 1rem;
+    height: 25px;
+  }
+
+  .sub {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* ===== SKILLS ===== */
+  .skills-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 90%;
+  }
+
+  /* ===== PROJECTS ===== */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* ===== CONTACT ===== */
+  .socials a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .typing {
+    font-size: 0.9rem;
+  }
+
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sub {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+
+}
+/* About Me */
+.about {
+  padding: 153px 20px;
+  text-align: center;
+
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Certificates */
+.certificates {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 15px;
+  width: 180px;
+  transition: 0.3s;
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Tools Section */
+.tools {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.tools-grid {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 54px;
+}
+.tool-card {
+  background: #1c1c1c;
+  padding: 15px;
+  margin: 0;
+  border-radius: 15px;
+  width: 120px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.tool-card img {
+  width: 80px;
+  margin-bottom: 0;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+}
+
+.about .btn {
+  display: block;      /* يجعل الزر في سطر منفصل */
+  margin: 100px auto 0; /* مسافة فوق الزر، ويكون في المنتصف */
+  text-align: center;  /* يتوسط النص داخل الزر */
+  width: 180px;        /* حجم الزر مناسب */
+}
+
+/* Navbar general */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 40px;
+  background-color: #1c1c1c;
+  position: fixed;   /* بدل sticky */
+  top: 0;
+  left: 0;
+  width: 100%;       /* مهم جداً */
+  z-index: 1000;     /* يكون فوق كل العناصر */
+}
+
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+
+/* Burger for mobile */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* Media Queries - Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: #1c1c1c;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 100px;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 أيقونة في كل صف */
+  }
+
+  .nav-links.active {
+    transform: translateX(0%);
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+ .phone-link{
+  margin-bottom: 20px ;
+ }
+
+ .more-certs {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.more-btn {
+  background: #ffcc00;
+  padding: 12px 30px;
+  border-radius: 10px;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.4);
+}
+
+.more-btn:hover {
+  background: white;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* -------- Popup Style -------- */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+}

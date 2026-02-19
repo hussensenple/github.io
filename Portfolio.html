@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hussien | GIS & Front-End Developer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="portfolio.css" />
+
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Hussien Mohamed Senple Ashour</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <header id="hero" class="hero">
+      <div class="hero-content">
+        <img src="123456.png" class="profile" alt="Profile" />
+
+        <h1 class="title">Hi, I'm <span>Hussien</span></h1>
+
+        <h2 class="typing" id="typing"></h2>
+
+        <p class="sub">
+          GIS & Geomatics Engineer & Front-End Developer Specialized in building
+          interactive maps & spatial applications.
+        </p>
+
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </header>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Hi, I'm Hussien Mohamed , Geomatics Engineer ,ITI 9-Month Student GIS
+        Track , Front-End Developer , GIS Engineer & Data Analyst . I specialize
+        in building interactive web apps, spatial analysis, and mapping
+        solutions. Passionate about technology, GIS, and creating visualizations
+        that bring data to life.
+      </p>
+      <a href="Hussien_CV.pdf" class="btn" target="_blank"> View My CV </a>
+    </section>
+
+    <section id="certificates" class="certificates">
+      <h2 class="section-title">Certificates</h2>
+      <div class="cert-grid">
+        <div class="certificate-card" data-cert="DataAnalyst.png">
+          <img src="DataAnalyst.png" alt="DataAnalyst" />
+          <p>Data Analysis</p>
+        </div>
+        <div class="certificate-card" data-cert="UCDavis.png">
+          <img src="UCDavis.png" alt="UCDavis" />
+          <p>GIS Fundamentals</p>
+        </div>
+        <div class="certificate-card" data-cert="4Level1.png">
+          <img src="4Level1.png" alt="4Level1" />
+          <p>English</p>
+        </div>
+        <div class="certificate-card" data-cert="GIS.png">
+          <img src="GIS.png" alt="GIS" />
+          <p>GIS Principles</p>
+        </div>
+        <div class="certificate-card" data-cert="1.png">
+          <img src="1.png" alt="Spatial Data Science" />
+          <p>Spatial Data Science</p>
+        </div>
+        <div class="certificate-card" data-cert="2.png">
+          <img src="2.png" alt="Cartography" />
+          <p>Cartography</p>
+        </div>
+        <div class="certificate-card" data-cert="3.png">
+          <img src="3.png" alt="Climate Change" />
+          <p>Climate Change</p>
+        </div>
+      </div>
+      <div class="more-certs">
+        <a
+          href="https://drive.google.com/drive/folders/1HwEx7XJoZpXFCm9GEAkCcKPmZogM85eg?usp=drive_link"
+          target="_blank"
+          class="more-btn"
+        >
+          View All Certificates
+        </a>
+      </div>
+      <!-- Popup -->
+      <div id="popup" class="popup">
+        <span class="close-btn">&times;</span>
+        <img id="popup-img" src="" />
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-box">
+        <div class="skill-card">
+          <h3>Front-End</h3>
+          <p>HTML, CSS, JavaScript</p>
+          <p>Responsive Design</p>
+          <p>Animations</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>GIS</h3>
+          <p>ArcGIS Pro</p>
+          <p>Network Analyst</p>
+          <p>Utility Network Analysis</p>
+          <p>Suitability Modeler</p>
+          <p>ModelBuilder</p>
+          <p>Spatial Analysis</p>
+          <p>QA & QC</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Development</h3>
+          <p>ArcGIS JS API</p>
+          <p>ArcPy</p>
+        </div>
+        <div class="skill-card">
+          <h3>Development</h3>
+          <p>ArcGIS JS API</p>
+          <p>Python (GDAL – Raster – Hydrology)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Development</h3>
+          <p>ArcGIS JS API</p>
+          <p>Python (GDAL – Raster – Hydrology)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Development</h3>
+          <p>ArcGIS JS API</p>
+          <p>Python (GDAL – Raster – Hydrology)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="tools">
+      <h2 class="section-title">Software & Tools</h2>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <img src="ArcGIS-Pro.png" alt="ArcGIS" />
+          <p>ArcGIS Pro</p>
+        </div>
+        <div class="tool-card">
+          <img src="AutoCAD.png" alt="AutoCAD" />
+          <p>AutoCAD</p>
+        </div>
+        <div class="tool-card">
+          <img src="Surfer.png" alt="Surfer" />
+          <p>Surfer</p>
+        </div>
+        <div class="tool-card" style="font-size: 13px; text-align: center">
+          <img src="Google_Earth_Pro.png" alt="Google_Earth_Pro" />
+          <p>GoogleEarthPro</p>
+        </div>
+        <div class="tool-card">
+          <img src="Excel.png" alt="Excel" />
+          <p>Excel</p>
+        </div>
+        <div class="tool-card">
+          <img src="Microsoft_Word.png" alt="Microsoft_Word" />
+          <p>Word</p>
+        </div>
+        <div class="tool-card">
+          <img src="PowerPoint.png" alt="PowerPoint" />
+          <p>PowerPoint</p>
+        </div>
+        <div class="tool-card" style="font-size: 12px; text-align: center">
+          <img
+            src="ArcGIS_ExperienceBuilder.png"
+            alt="ArcGIS_ExperienceBuilder"
+          />
+          <p>ExperienceBuilder</p>
+        </div>
+        <div class="tool-card">
+          <img src="arcgis-dashboards.png" alt="arcgis-dashboards" />
+          <p>Dashboard</p>
+        </div>
+        <div class="tool-card">
+          <img src="Survey123.jfif" alt="Survey123" />
+          <p>Survey123</p>
+        </div>
+        <div class="tool-card">
+          <img src="StoryMaps.png" alt="StoryMaps" />
+          <p>StoryMaps</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">GIS & Web Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>🌍 Web Map for Heritage Sites</h3>
+          <p>Interactive map using Leaflet.js + ArcGIS Online.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>🌊 Flood Analysis</h3>
+          <p>DEM preprocessing, Flow Direction, Watershed extraction.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>💨 Wind Farm Site Suitability</h3>
+          <p>Multi-criteria analysis using ModelBuilder.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>🚗 Route Optimization</h3>
+          <p>Network Analyst for shortest path & service area.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>🚗 Route Optimization</h3>
+          <p>Network Analyst for shortest path & service area.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>🚗 Route Optimization</h3>
+          <p>Network Analyst for shortest path & service area.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>🚗 Route Optimization</h3>
+          <p>Network Analyst for shortest path & service area.</p>
+          <a href="Wind Farms.pdf" target="_blank" class="btn">
+            View Project Details
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+
+      <p class="contact-text">Let's work together on a GIS or Web project!</p>
+
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/eng-hussienmohamedsenple"
+          target="_blank"
+        >
+          <img
+            src="linkedin-icon.png"
+            alt="LinkedIn"
+            style="width: 35px; margin-top: 15px"
+          />
+        </a>
+        <a href="mailto:hussensenple@gmail.com">
+          <img src="email-icon.png" alt="Email" style="width: 35px" />
+        </a>
+        <a href="tel:+201097043604" class="phone-link">
+          <img src="phone-icon.png" alt="Phone" style="width: 35px" />
+        </a>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="portfolio.js"></script>
+
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
+</html>
